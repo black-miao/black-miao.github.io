@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+           
+        }
+
+        img {
+            margin-top: 20px;
+            width: 24%;
+            border-radius: 20px;
+
+        }
+
+        img:last-child:nth-child(4n - 1) {
+            margin-right: calc(24% + 4% / 3);
+        }
+
+       
+        img:last-child:nth-child(4n - 2) {
+            margin-right: calc(48% + 8% / 3);
+        }
+
+        div {
+            margin: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img alt="123" src="cat.jpg">
+
+        <img alt="123" src="cat.jpg">
+
+        <img alt="123" src="cat.jpg">
+
+        <img alt="123" src="cat.jpg">
+        <img alt="123" src="cat.jpg">
+        <img alt="123" src="cat.jpg">
+        
+
+    </div>
+</body>
+
+</html>
