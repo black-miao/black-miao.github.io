@@ -38,11 +38,12 @@ body {
     transform: translate(-50%,-50%);
     border-radius: 20px;
     object-fit:cover;
-    transition: width 0.2s ease-in, height 0.2s ease-in,box-shadow 0.2s ease-in;
+    transition: width 0.2s ease-in, height 0.2s ease-in,box-shadow 0.2s ease-in, opacity 0.2s ease-in;
 }
 
 .item img:hover{
     width: 96%;
     height: 96%;
+    opacity: 0.8;
     box-shadow:0 0 10px #808080;
 }
