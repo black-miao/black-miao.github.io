@@ -10,7 +10,7 @@
 // }
 let container = document.querySelector('.container');
 //add img
-add(20)
+add(21)
 function add(num) {
     if (num != 0) {
         let item = document.createElement('div');
