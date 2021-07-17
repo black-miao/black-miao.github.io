@@ -17,7 +17,7 @@ function add(num) {
         let img = document.createElement('img');
         item.className = 'item';
         img.alt = '图片';
-        img.src = 'pic/pic ('+num+').jpg';
+        img.src = 'https://raw.githubusercontent.com/black-miao/black-miao.github.io/master/pic/pic%20('+num+').JPG';
         item.style.opacity = 0;
         item.appendChild(img);
         container.appendChild(item);
@@ -30,7 +30,7 @@ function add(num) {
         let img = document.createElement('img');
         item.className = 'item';
         img.alt = '图片';
-        img.src = 'pic/pic ('+num+').jpg';
+        img.src = 'https://raw.githubusercontent.com/black-miao/black-miao.github.io/master/pic/pic%20('+num+').JPG';
         item.style.opacity = 0;
         item.appendChild(img);
         container.appendChild(item);
