@@ -14,12 +14,12 @@ body {
 }
 
 .item:last-child:nth-child(4n - 1) {
-    margin-right: calc(24% + 4% / 3);
+    margin-right: calc((100% - 4*20.4vw)/3 + 20.4vw);
 }
 
 
 .item:last-child:nth-child(4n - 2) {
-    margin-right: calc(48% + 8% / 3);
+    margin-right: calc(((100% - 4*20.4vw)/3 + 20.4vw)*2);
 }
 
 .container {
