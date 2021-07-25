@@ -12,7 +12,7 @@ let container = document.querySelector('.container');
 let browseImg = document.querySelector('.browseImg');
 let bimg = document.querySelector('.browseImg img');
 //add img
-add(21)
+add(10)
 
 function browse(src) {
     browseImg.style.display = 'block';
@@ -31,7 +31,7 @@ function back() {
 }
 
 function add(num) {
-    if (num != 0) {
+    if (num != -1) {
         let item = document.createElement('div');
         let img = document.createElement('img');
         item.className = 'item';
@@ -45,18 +45,5 @@ function add(num) {
             item.style.opacity = 1;
             add(num - 1);
         }, 100, item);
-    } else if (num === 0) {
-        let item = document.createElement('div');
-        let img = document.createElement('img');
-        item.className = 'item';
-        img.alt = '图片';
-        img.src = 'pic/pic (' + num + ').jpg';
-        img.addEventListener('click', (e) => {browse(e.target.src)});
-        item.style.opacity = 0;
-        item.appendChild(img);
-        container.appendChild(item);
-        setTimeout((item) => {
-            item.style.opacity = 1;
-        }, 100, item);
-    }
+    } 
 }
