@@ -69,11 +69,10 @@ function loadPreviousPage() {
     tPage--;
     if (tPage === 1) {
         previousBtn.style.display = 'none';
-        add(p.lastPage, 12 * (tPage - 1));
     } else {
         nextBtn.style.display = 'block';
-        add(12, 12 * (tPage - 1));
     }
+    add(12, 12 * (tPage - 1));
 }
 
 function cleanUp() {
