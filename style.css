@@ -74,3 +74,15 @@ body {
     border: none;
     border-radius: 20px;
 }
+
+.previousPage {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    width: 50px;
+    height: 80%;
+    background-color: #f5c88e;
+    border: none;
+    border-radius: 20px;
+}

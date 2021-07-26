@@ -2,6 +2,7 @@ let container = document.querySelector('.container');
 let browseImg = document.querySelector('.browseImg');
 let bimg = document.querySelector('.browseImg img');
 let nextBtn = document.querySelector('.nextPage');
+let previousBtn = document.querySelector('.previousPage');
 let tPage = 0;
 let p = page(70);
 
@@ -53,8 +54,24 @@ function loadNextPage() {
     cleanUp();
     tPage++;
     if (tPage === p.page) {
+        nextBtn.style.display = 'none';
+        add(p.lastPage, 12 * (tPage - 1));
+    } else if (tPage === 1) {
+        add(12, 12 * (tPage - 1));
+    } else {
+        previousBtn.style.display = 'block';
+        add(12, 12 * (tPage - 1));
+    }
+}
+
+function loadPreviousPage() {
+    cleanUp();
+    tPage--;
+    if (tPage === 1) {
+        previousBtn.style.display = 'none';
         add(p.lastPage, 12 * (tPage - 1));
     } else {
+        nextBtn.style.display = 'block';
         add(12, 12 * (tPage - 1));
     }
 }
@@ -66,3 +83,5 @@ function cleanUp() {
 }
 
 nextBtn.addEventListener('click', loadNextPage);
+previousBtn.addEventListener('click', loadPreviousPage);
+loadNextPage();
