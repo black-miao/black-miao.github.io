@@ -66,23 +66,32 @@ body {
 
 .nextPage {
     position: absolute;
-    bottom: 5%;
+    top: 6%;
     right: 3%;
-    width: 50px;
-    height: 80%;
+    width: 3vw;
+    height: 46vw;
     background-color: #f5c88e;
     border: none;
     border-radius: 20px;
+    opacity: 0.4;
+    transition: box-shadow 0.2s linear, opacity 0.2s linear;
 }
 
 .previousPage {
     display: none;
     position: absolute;
-    bottom: 5%;
+    top: 6%;
     left: 3%;
-    width: 50px;
-    height: 80%;
+    width: 3vw;
+    height: 46vw;
     background-color: #f5c88e;
     border: none;
     border-radius: 20px;
+    opacity: 0.4;
+    transition: box-shadow 0.2s linear, opacity 0.2s linear;
+}
+
+.nextPage:hover, .previousPage:hover {
+    opacity: 1;
+    box-shadow:0 0 10px #808080;
 }
