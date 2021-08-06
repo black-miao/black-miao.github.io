@@ -3,6 +3,7 @@ let browseImg = document.querySelector('.browseImg');
 let bimg = document.querySelector('.browseImg img');
 let nextBtn = document.querySelector('.nextPage');
 let previousBtn = document.querySelector('.previousPage');
+let tiltle = document.querySelector('.tiltle');
 let tPage = 0;
 let p = page(70);
 
@@ -83,4 +84,5 @@ function cleanUp() {
 
 nextBtn.addEventListener('click', loadNextPage);
 previousBtn.addEventListener('click', loadPreviousPage);
+tiltle.addEventListener('click',() => window.open('timer.html', 'timer'));
 loadNextPage();
